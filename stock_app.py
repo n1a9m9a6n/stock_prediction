@@ -16,7 +16,7 @@ scaler=MinMaxScaler(feature_range=(0,1))
 
 
 
-df_nse = pd.read_csv("D:\\Data Science\\Projects\\Stock Martket\\archive data\\BPCL.csv")
+df_nse = pd.read_csv("BPCL.csv")
 
 df_nse["Date"]=pd.to_datetime(df_nse.Date,format="%Y-%m-%d")
 df_nse.index=df_nse['Date']
@@ -71,7 +71,7 @@ valid['Predictions']=closing_price
 
 
 
-df = pd.read_csv("D:\\Data Science\\Projects\\Stock Martket\\archive data\\nifty_50_all.csv")
+df = pd.read_csv("nifty_50_all.csv")
 
 colors = {
     'background': '#111111',
